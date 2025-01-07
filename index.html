@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de Landry Motio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -19,25 +21,38 @@
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            padding: 20px 0;
+            text-align: center;
         }
         header h1 {
-            text-align: center;
             margin: 0;
-            padding-bottom: 10px;
+            font-size: 2.5em;
         }
         .main {
             padding: 20px;
             background: #fff;
             margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .main h2 {
             color: #333;
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 5px;
         }
         .main p, .main ul {
             line-height: 1.6;
+        }
+        .main ul {
+            list-style: none;
+            padding: 0;
+        }
+        .main ul li {
+            margin: 10px 0;
+        }
+        .main ul li i {
+            color: #77aaff;
+            margin-right: 10px;
         }
         footer {
             background: #333;
@@ -56,11 +71,11 @@
     </header>
     <div class="container main">
         <section id="profil">
-            <h2>Profil</h2>
+            <h2><i class="fas fa-user"></i> Profil</h2>
             <p>Chef de Projet Digital passionné par l'innovation technologique et fort d'une expertise pointue, je suis prêt à relever les défis les plus exigeants de l'univers numérique.</p>
         </section>
         <section id="experience">
-            <h2>Expériences professionnelles</h2>
+            <h2><i class="fas fa-briefcase"></i> Expériences professionnelles</h2>
             <ul>
                 <li><strong>Consultant CGI - Technicien Support Logiciel (niveau 2)</strong> - PSA - STELLANTIS Bessoncourt (Depuis octobre 2023)</li>
                 <li><strong>Assistant Chef de projet digital</strong> - COLAS Velizy (De novembre 2022 à septembre 2023)</li>
@@ -69,15 +84,15 @@
             </ul>
         </section>
         <section id="education">
-            <h2>Diplômes et Formations</h2>
+            <h2><i class="fas fa-graduation-cap"></i> Diplômes et Formations</h2>
             <ul>
-                <li><strong>Bac + 5 Management de projet informatique</strong> - Cyber-sécurité (De 2021 à 2023) - ESTYA/Paris</li>
+                <li><strong>Bac + 5 Management de projet informatique</strong> - Cyber-sécurité (De 2021 à 2023) - FEDE/Paris</li>
                 <li><strong>Bac + 3 Management des Systèmes Réseaux</strong> - (De 2020 à 2021) - IUGET/Polytech</li>
                 <li><strong>Bac+2 BTS Informatique Industriel et Automatisme</strong> - (De 2017 à 2019) - IUGET/Polytech</li>
             </ul>
         </section>
         <section id="competences">
-            <h2>Compétences</h2>
+            <h2><i class="fas fa-cogs"></i> Compétences</h2>
             <ul>
                 <li>Adaptabilité</li>
                 <li>Collaboration</li>
@@ -96,7 +111,7 @@
             </ul>
         </section>
         <section id="certifications">
-            <h2>Certifications</h2>
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
             <ul>
                 <li>Professional Scrum Product Owner I (PSPO I) (Scrum.org)</li>
                 <li>Conduire et piloter un projet innovant avec les méthodes Agiles (Oriions)</li>
@@ -108,7 +123,7 @@
             </ul>
         </section>
         <section id="langues">
-            <h2>Langues</h2>
+            <h2><i class="fas fa-language"></i> Langues</h2>
             <ul>
                 <li>Français</li>
                 <li>Anglais</li>
@@ -116,7 +131,7 @@
             </ul>
         </section>
         <section id="informatique">
-            <h2>Informatique</h2>
+            <h2><i class="fas fa-laptop-code"></i> Informatique</h2>
             <ul>
                 <li>JIRA</li>
                 <li>Miro</li>
@@ -132,15 +147,8 @@
             </ul>
         </section>
         <section id="contact">
-            <h2>Contact</h2>
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
             <p>Email : motiolandry@gmail.com</p>
             <p>Téléphone : 07 83 38 66 63</p>
             <p>Île-De-France, France</p>
-            <p>Permis B</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 Landry Motio</p>
-    </footer>
-</body>
-</html>
+            <p>
