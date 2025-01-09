@@ -28,6 +28,21 @@
             margin: 0;
             font-size: 2.5em;
         }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            background: #77aaff;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        nav a:hover {
+            background: #0056b3;
+        }
         .main {
             padding: 20px;
             background: #fff;
@@ -61,15 +76,34 @@
             padding: 10px;
             margin-top: 20px;
         }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="fade-in">
         <div class="container">
             <h1>CV de Landry Motio</h1>
+            <nav>
+                <a href="#profil">Profil</a>
+                <a href="#experience">Expériences</a>
+                <a href="#education">Éducation</a>
+                <a href="#competences">Compétences</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#langues">Langues</a>
+                <a href="#informatique">Informatique</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
-    <div class="container main">
+    <div class="container main fade-in">
         <section id="profil">
             <h2><i class="fas fa-user"></i> Profil</h2>
             <p>Chef de Projet Digital passionné par l'innovation technologique et fort d'une expertise pointue, je suis prêt à relever les défis les plus exigeants de l'univers numérique.</p>
@@ -151,4 +185,11 @@
             <p>Email : motiolandry@gmail.com</p>
             <p>Téléphone : 07 83 38 66 63</p>
             <p>Île-De-France, France</p>
-            <p>
+            <p>Permis B</p>
+        </section>
+    </div>
+    <footer class="fade-in">
+        <p>&copy; 2025 Landry Motio</p>
+    </footer>
+</body>
+</html>
