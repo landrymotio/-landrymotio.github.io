@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Landry Motio</title>
+    <title>Portfolio de Landry Motio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -30,6 +30,7 @@
         }
         nav {
             margin-top: 10px;
+            text-align: center;
         }
         nav a {
             color: #fff;
@@ -39,6 +40,7 @@
             background: #77aaff;
             border-radius: 5px;
             margin: 5px;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
             background: #0056b3;
@@ -85,30 +87,63 @@
                 opacity: 1;
             }
         }
+        .slide-down {
+            animation: slideDown 1s ease-out;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .button {
+            background-color: #77aaff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header class="fade-in">
         <div class="container">
-            <h1>CV de Landry Motio</h1>
+            <h1>Landry Motio - Ingénieur </h1>
             <nav>
-                <a href="#profil">Profil</a>
-                <a href="#experience">Expériences</a>
-                <a href="#education">Éducation</a>
-                <a href="#competences">Compétences</a>
-                <a href="#certifications">Certifications</a>
-                <a href="#langues">Langues</a>
-                <a href="#informatique">Informatique</a>
-                <a href="#contact">Contact</a>
+                <a href="#profil" class="tab-link" data-tab="profil">Profil</a>
+                <a href="#experience" class="tab-link" data-tab="experience">Expériences</a>
+                <a href="#education" class="tab-link" data-tab="education">Éducation</a>
+                <a href="#competences" class="tab-link" data-tab="competences">Compétences</a>
+                <a href="#certifications" class="tab-link" data-tab="certifications">Certifications</a>
+                <a href="#langues" class="tab-link" data-tab="langues">Langues</a>
+                <a href="#informatique" class="tab-link" data-tab="informatique">Informatique</a>
+                <a href="#contact" class="tab-link" data-tab="contact">Contact</a>
             </nav>
         </div>
     </header>
     <div class="container main fade-in">
-        <section id="profil">
+        <section id="profil" class="tab-content active slide-down">
             <h2><i class="fas fa-user"></i> Profil</h2>
-            <p>Chef de Projet Digital passionné par l'innovation technologique et fort d'une expertise pointue, je suis prêt à relever les défis les plus exigeants de l'univers numérique.</p>
+            <p>Chef de Projet Digital passionné par l'innovation technologique et fort d'une expertise pointue, je suis prêt à relever les défis les plus exigeants de l'univers numérique. Titulaire d'un master en Management de projet informatique, j'ai pu forger mon expérience grâce à des projets complexes en gestion de projet en tant que chef de projet digital et en support fonctionnel niveau 2.</p>
         </section>
-        <section id="experience">
+        <section id="experience" class="tab-content">
             <h2><i class="fas fa-briefcase"></i> Expériences professionnelles</h2>
             <ul>
                 <li><strong>Consultant CGI - Technicien Support Logiciel (niveau 2)</strong> - PSA - STELLANTIS Bessoncourt (Depuis octobre 2023)</li>
@@ -117,7 +152,7 @@
                 <li><strong>Prestataire Informatique (Indépendant)</strong> - DIGITAL SERVICES Cameroon (De novembre 2019 à mars 2021)</li>
             </ul>
         </section>
-        <section id="education">
+        <section id="education" class="tab-content">
             <h2><i class="fas fa-graduation-cap"></i> Diplômes et Formations</h2>
             <ul>
                 <li><strong>Bac + 5 Management de projet informatique</strong> - Cyber-sécurité (De 2021 à 2023) - FEDE/Paris</li>
@@ -125,7 +160,7 @@
                 <li><strong>Bac+2 BTS Informatique Industriel et Automatisme</strong> - (De 2017 à 2019) - IUGET/Polytech</li>
             </ul>
         </section>
-        <section id="competences">
+        <section id="competences" class="tab-content">
             <h2><i class="fas fa-cogs"></i> Compétences</h2>
             <ul>
                 <li>Adaptabilité</li>
@@ -144,7 +179,7 @@
                 <li>Communication : Capable de transmettre des informations techniques aux utilisateurs non techniques</li>
             </ul>
         </section>
-        <section id="certifications">
+        <section id="certifications" class="tab-content">
             <h2><i class="fas fa-certificate"></i> Certifications</h2>
             <ul>
                 <li>Professional Scrum Product Owner I (PSPO I) (Scrum.org)</li>
@@ -156,7 +191,7 @@
                 <li>Principe de Base d'un projet (Guide PMBOK) Skillsoft</li>
             </ul>
         </section>
-        <section id="langues">
+        <section id="langues" class="tab-content">
             <h2><i class="fas fa-language"></i> Langues</h2>
             <ul>
                 <li>Français</li>
@@ -164,7 +199,7 @@
                 <li>Allemand</li>
             </ul>
         </section>
-        <section id="informatique">
+        <section id="informatique" class="tab-content">
             <h2><i class="fas fa-laptop-code"></i> Informatique</h2>
             <ul>
                 <li>JIRA</li>
@@ -180,7 +215,7 @@
                 <li>Microsoft Azure DevOps</li>
             </ul>
         </section>
-        <section id="contact">
+        <section id="contact" class="tab-content">
             <h2><i class="fas fa-envelope"></i> Contact</h2>
             <p>Email : motiolandry@gmail.com</p>
             <p>Téléphone : 07 83 38 66 63</p>
@@ -188,16 +223,23 @@
             <p>Permis B</p>
         </section>
     </div>
-<<<<<<< HEAD
     <footer class="fade-in">
         <p>&copy; 2025 Landry Motio</p>
     </footer>
+    <script>
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.tab-content').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                document.querySelectorAll('.tab-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.getElementById(this.getAttribute('data-tab')).classList.add('active');
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
-=======
-    <footer>
-        <p>&copy; 2025 Landry Motio</p>
-    </footer>
-</body>
-</html>
->>>>>>> ebcf89a0ab1be851650ec5ae29a74e75f9097780
